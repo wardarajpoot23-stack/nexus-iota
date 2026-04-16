@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 224 71% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 10%;
+
+    --primary: 226 71% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 10%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 226 71% 95%;
+    --accent-foreground: 226 71% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 226 71% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 224 71% 10%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 226 71% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 224 60% 18%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 224 50% 20%;
+    --sidebar-ring: 226 71% 50%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 220 14% 96%;
+
+    --card: 224 60% 8%;
+    --card-foreground: 220 14% 96%;
+
+    --popover: 224 60% 8%;
+    --popover-foreground: 220 14% 96%;
+
+    --primary: 226 71% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 224 50% 15%;
+    --secondary-foreground: 220 14% 96%;
+
+    --muted: 224 50% 15%;
+    --muted-foreground: 220 9% 60%;
+
+    --accent: 226 71% 20%;
+    --accent-foreground: 226 71% 80%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 50% 18%;
+    --input: 224 50% 18%;
+    --ring: 226 71% 55%;
+
+    --sidebar-background: 224 71% 4%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 226 71% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 224 60% 12%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 224 50% 15%;
+    --sidebar-ring: 226 71% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
